@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueEllipseProgress from 'vue-ellipse-progress'
+
+Vue.use(VueEllipseProgress)
 
 Vue.config.productionTip = false
 
