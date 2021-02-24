@@ -4,7 +4,7 @@
     <vue-ellipse-progress
       :data="circles"
       :progress="progress"
-      :angle="-90"
+      :angle="90"
       color="blue"
       :colorFill="colorFillGradient"
       emptyColor="#8ec5fc"
