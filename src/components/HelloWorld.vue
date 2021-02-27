@@ -3,37 +3,35 @@
     <h1>{{ msg }}</h1>
     <vue-ellipse-progress
       :data="circles"
-      :progress="progress"
+      :progress="100"
       :angle="-90"
-      color="blue"
+      color="black"
       :color-fill="colorFillGradient"
-      empty-color="#8ec5fc"
+      empty-color="#eeeeee"
       :empty-color-fill="emptyColorFillGradient"
       :size="300"
-      :thickness="10"
-      empty-thickness="10%"
-      line-mode="in 10"
+      :thickness="1"
+      empty-thickness="1%"
+      line-mode="normal"
       :legend="true"
-      :legend-value="180"
+      :legend-value="100"
+      font-family="arial black"
       :legend-formatter="
         ({ currentValue }) =>
           new Intl.NumberFormat('de-DE').format(currentValue)
       "
       legend-class="legend-custom-style"
-      dash="60 0.9"
       animation="reverse 700 400"
       :no-data="false"
       :loading="false"
-      font-color="white"
+      font-color="black"
       :half="false"
       :gap="10"
-      dot="10 blue"
+      dot="8 black"
       reverse
-      font-size="5rem">
-      <span slot="legend-value">/200</span>
-      <p slot="legend-caption">
-        GOOD JOB
-      </p>
+      font-size="3rem">
+      <span slot="legend-value"
+style="font-size: 15px">%</span>
     </vue-ellipse-progress>
   </div>
 </template>
@@ -43,6 +41,7 @@ export default {
   name: 'HelloWorld',
   data() {
     return {
+      progress: 34,
       msg: 'Welcome to Your Vue.js App'
     }
   }
