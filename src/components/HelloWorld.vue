@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
     <vue-ellipse-progress
       :data="circles"
       :progress="100"
@@ -29,23 +28,22 @@
       :gap="10"
       dot="8 black"
       reverse
-      font-size="3rem">
-      <span slot="legend-value"
-style="font-size: 15px">%</span>
+      font-size="3rem"
+    >
+      <span slot="legend-value" style="font-size: 15px">%</span>
     </vue-ellipse-progress>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   data() {
     return {
-      progress: 34,
-      msg: 'Welcome to Your Vue.js App'
-    }
+      progress: 34
+    };
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
