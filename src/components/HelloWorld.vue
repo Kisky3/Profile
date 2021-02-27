@@ -6,46 +6,47 @@
       :progress="progress"
       :angle="-90"
       color="blue"
-      :colorFill="colorFillGradient"
-      emptyColor="#8ec5fc"
-      :emptyColorFill="emptyColorFillGradient"
+      :color-fill="colorFillGradient"
+      empty-color="#8ec5fc"
+      :empty-color-fill="emptyColorFillGradient"
       :size="300"
       :thickness="10"
-      emptyThickness="10%"
-      lineMode="in 10"
+      empty-thickness="10%"
+      line-mode="in 10"
       :legend="true"
-      :legendValue="180"
-      :legendFormatter="
+      :legend-value="180"
+      :legend-formatter="
         ({ currentValue }) =>
           new Intl.NumberFormat('de-DE').format(currentValue)
       "
-      legendClass="legend-custom-style"
+      legend-class="legend-custom-style"
       dash="60 0.9"
       animation="reverse 700 400"
-      :noData="false"
+      :no-data="false"
       :loading="false"
-      fontColor="white"
+      font-color="white"
       :half="false"
       :gap="10"
       dot="10 blue"
       reverse
-      fontSize="5rem"
-    >
+      font-size="5rem">
       <span slot="legend-value">/200</span>
-      <p slot="legend-caption">GOOD JOB</p>
+      <p slot="legend-caption">
+        GOOD JOB
+      </p>
     </vue-ellipse-progress>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: 'HelloWorld',
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
-    };
+      msg: 'Welcome to Your Vue.js App'
+    }
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
