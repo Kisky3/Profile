@@ -4,7 +4,7 @@
     <vue-ellipse-progress
       :data="circles"
       :progress="progress"
-      :angle="90"
+      :angle="-90"
       color="blue"
       :colorFill="colorFillGradient"
       emptyColor="#8ec5fc"
@@ -15,6 +15,10 @@
       lineMode="in 10"
       :legend="true"
       :legendValue="180"
+      :legendFormatter="
+        ({ currentValue }) =>
+          new Intl.NumberFormat('de-DE').format(currentValue)
+      "
       legendClass="legend-custom-style"
       dash="60 0.9"
       animation="reverse 700 400"
@@ -24,62 +28,12 @@
       :half="false"
       :gap="10"
       dot="10 blue"
+      reverse
       fontSize="5rem"
     >
       <span slot="legend-value">/200</span>
       <p slot="legend-caption">GOOD JOB</p>
     </vue-ellipse-progress>
-    <ul>
-      <li>
-        <a href="https://vuejs.org" target="_blank">
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a href="https://forum.vuejs.org" target="_blank">
-          Forum
-        </a>
-      </li>
-      <li>
-        <a href="https://chat.vuejs.org" target="_blank">
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/vuejs" target="_blank">
-          Twitter
-        </a>
-      </li>
-      <br />
-      <li>
-        <a href="http://vuejs-templates.github.io/webpack/" target="_blank">
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a href="http://router.vuejs.org/" target="_blank">
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a href="http://vuex.vuejs.org/" target="_blank">
-          vuex
-        </a>
-      </li>
-      <li>
-        <a href="http://vue-loader.vuejs.org/" target="_blank">
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/vuejs/awesome-vue" target="_blank">
-          awesome-vue
-        </a>
-      </li>
-    </ul>
   </div>
 </template>
 
