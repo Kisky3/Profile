@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <vue-ellipse-progress :data="circles"
+    <vue-ellipse-progress
+:data="circles"
                           :progress="100"
                           :angle="-90"
                           color="black"
@@ -28,7 +29,8 @@
                           dot="8 black"
                           reverse
                           font-size="3rem">
-      <span slot="legend-value"
+      <span
+slot="legend-value"
             style="font-size: 19px">%</span>
     </vue-ellipse-progress>
   </div>
