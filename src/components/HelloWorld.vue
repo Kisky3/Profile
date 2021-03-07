@@ -1,13 +1,10 @@
 <template>
   <div class="loading">
     <vue-ellipse-progress
-      :data="circles"
       :progress="100"
       :angle="-90"
       color="black"
-      :color-fill="colorFillGradient"
       empty-color="#eeeeee"
-      :empty-color-fill="emptyColorFillGradient"
       :size="300"
       :thickness="1"
       empty-thickness="1%"
@@ -38,7 +35,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Loading",
   data() {
     return {
       progress: 34
@@ -54,7 +51,6 @@ export default {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border: solid 1px #ccc;
-  background: #ccc;
+  background: #fff;
 }
 </style>

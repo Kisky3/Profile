@@ -1,15 +1,19 @@
 <template>
   <div class="profile_container">
-    <span>テスト</span>
+    <loading />
   </div>
 </template>
 
 <script>
+import Loading from "@/components/Loading.vue"
 export default {
-  name: "Profile",
+  name: "Loading",
+  components: {
+    Loading
+  },
   data() {
     return {}
-  }
+  },
 }
 </script>
 
