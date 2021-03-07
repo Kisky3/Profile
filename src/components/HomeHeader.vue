@@ -2,7 +2,7 @@
   <div>
     <section class="home-header section-container">
       <h1 class="home-header__title">
-        Profile
+        Profile / Kou
       </h1>
     </section>
     <div class="home-header__content">
