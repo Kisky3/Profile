@@ -8,7 +8,7 @@
     <div class="home-header__content">
       <div>
         <a
-          class="home-header__email lines-shift-container" 
+          class="home-header__email lines-shift-container"
           href="kisky3@126.com">kisky3@126.com</a>
       </div>
     </div>
