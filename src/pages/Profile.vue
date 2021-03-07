@@ -1,17 +1,19 @@
 <template>
-  <div class="profile_container">
+  <div class="warpper">
     <!-- <loading v-if="showLoading" /> -->
-    <p>this is a profile and have alreay been loaded</p>
+    <home-header />
   </div>
 </template>
 
 <script>
 // import Loading from "@/components/Loading"
+import HomeHeader from "@/components/HomeHeader"
 export default {
   name: "Profile",
-  // components: {
-  //   Loading,
-  // },
+  components: {
+    // Loading,
+    HomeHeader
+  },
   data () {
     return {
       showLoading: true,
@@ -32,9 +34,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.profile_container {
-  width: 100%;
-  height: 100%;
-  background: red;
-}
 </style>
