@@ -1,15 +1,32 @@
 <template>
   <div class="profile_container">
+    <!-- <loading v-if="showLoading" /> -->
     <p>this is a profile and have alreay been loaded</p>
   </div>
 </template>
 
 <script>
+// import Loading from "@/components/Loading"
 export default {
   name: "Profile",
-  data() {
-    return {}
+  // components: {
+  //   Loading,
+  // },
+  data () {
+    return {
+      showLoading: true,
+      timer: null,
+    }
   },
+  created () {
+    const that = this
+    that.timer = setInterval(function () {
+      if (document.readyState === "complete") {
+        that.showLoading = false
+        window.clearInterval(that.timer)
+      }
+    }, 1000)
+  }
 }
 </script>
 

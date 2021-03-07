@@ -1,22 +1,12 @@
 <template>
   <div id="app">
-    <loading v-if="showLoading" />
     <router-view />
   </div>
 </template>
 
 <script>
-import Loading from "@/components/Loading"
 export default {
   name: "App",
-  components: {
-    Loading,
-  },
-  data() {
-    return {
-      showLoading: true
-    }
-  },
 }
 </script>
 
