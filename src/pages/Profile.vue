@@ -5,9 +5,9 @@
 </template>
 
 <script>
-import Loading from "@/components/Loading.vue"
+import Loading from "@/components/Loading"
 export default {
-  name: "Loading",
+  name: "Profile",
   components: {
     Loading
   },
