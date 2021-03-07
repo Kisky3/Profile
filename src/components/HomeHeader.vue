@@ -9,7 +9,7 @@
       <div>
         <a
           class="home-header__email lines-shift-container" 
-          href="fred@nerby.com">fred@nerby.com</a>
+          href="fred@nerby.com">kisky3@126.com</a>
       </div>
     </div>
   </div>
