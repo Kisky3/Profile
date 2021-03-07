@@ -1,16 +1,12 @@
 <template>
   <div class="profile_container">
-    <loading />
+    <p>this is a profile and have alreay been loaded</p>
   </div>
 </template>
 
 <script>
-import Loading from "@/components/Loading"
 export default {
   name: "Profile",
-  components: {
-    Loading
-  },
   data() {
     return {}
   },
