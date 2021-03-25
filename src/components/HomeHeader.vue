@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="home-header section-container">
-      <h1 class="home-header__title">
+      <h1 class="home-header-title">
         Profile
       </h1>
     </section>
@@ -32,7 +32,7 @@ export default {
   padding-left: 60px;
   padding-right: 60px;
 }
-.home-header__title {
+.home-header-title {
   line-height: 250px;
   color: #111;
   font-size: 130px;
